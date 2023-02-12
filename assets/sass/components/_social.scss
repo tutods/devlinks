@@ -1,0 +1,39 @@
+/**
+ * Social icons and links
+ */
+.social {
+  display: flex;
+  @include flexAlignment(center, center);
+  gap: 1.6rem;
+
+  padding: 2.4rem;
+
+  & > a {
+    @include size(4rem);
+
+    display: inline-flex;
+    @include flexAlignment(center, center);
+
+    border-radius: 100%;
+
+    background-color: transparent;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    & > svg {
+      @include size(2.4rem);
+    }
+  }
+}
+
+html.dark .social {
+  & > a {
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}

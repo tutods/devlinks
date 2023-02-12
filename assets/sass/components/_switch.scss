@@ -1,0 +1,103 @@
+/**
+ * Switch Theme
+ */
+.switch {
+  min-height: 3.2rem;
+
+  display: flex;
+  @include flexAlignment(center, center);
+
+  padding: 0.4rem 0;
+
+  button {
+    position: relative;
+
+    width: 6.4rem;
+
+    border: 4px solid red;
+    border: 0;
+    background-color: transparent;
+
+    cursor: pointer;
+    outline: none;
+
+    span {
+      &:nth-of-type(1) {
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        @include size(3.2rem);
+
+        display: inline-flex;
+        @include flexAlignment(center, center);
+
+        border: 0;
+        border-radius: 50%;
+
+        background-color: #fff;
+        color: #000;
+
+        transition: all 0.2s ease-in-out;
+        animation: slide-in 0.2s forwards;
+        transform: translateY(-50%);
+        z-index: 1;
+
+        &:hover {
+          outline: 8px solid rgba(0, 0, 0, 0.2);
+        }
+
+        svg {
+          width: 1.6rem;
+          height: 1.6rem;
+        }
+      }
+
+      &:nth-of-type(2) {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+
+        width: 6.4rem;
+        height: 2.4rem;
+
+        display: block;
+
+        border: 0.1rem solid $darkBorder;
+        border-radius: 9999rem;
+
+        background-color: rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(0.4rem);
+        -webkit-backdrop-filter: blur(0.4rem);
+
+        /* transition: all 0.3s ease-in-out; */
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+html.dark {
+  .switch {
+    button {
+      span {
+        &:first-of-type {
+          left: 0;
+
+          animation: slide-back 0.2s;
+
+          &:hover {
+            outline-color: rgba(255, 255, 255, 0.2);
+          }
+        }
+
+        &:nth-of-type(2) {
+          border: 0.1rem solid $whiteBorder;
+
+          background-color: rgba(255, 255, 255, 0.05);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+#container {
+  /* 588px */
+  width: 58.8rem;
+
+  margin: 5.6rem auto 0;
+
+  @media screen and (max-width: 480px) {
+    /* 360px */
+    width: 36rem;
+  }
+}

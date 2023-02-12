@@ -1,0 +1,26 @@
+html {
+  /**
+     * 62.5% of 16px browser font size is 10px
+     * with this change, 16px will be 1.6rem
+     * https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+    */
+  font-size: 62.5%;
+
+  /* smoother transition between themes */
+  transition: all 0.2s ease-in-out;
+}
+
+/**
+ * CSS Reset
+ * - remove paddings and margins
+ * - set box-sizing to border-box
+ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}

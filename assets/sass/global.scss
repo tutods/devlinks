@@ -1,0 +1,19 @@
+// Variables
+@import 'partials/colors';
+@import 'partials/images';
+@import 'partials/animations';
+
+// Mixins
+@import 'partials/mixins';
+
+// CSS Reset
+@import 'partials/reset';
+
+// Components
+@import 'components/body';
+@import 'components/container';
+@import 'components/profile';
+@import 'components/links';
+@import 'components/social';
+@import 'components/_switch';
+@import 'components/footer';

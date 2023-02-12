@@ -1,0 +1,341 @@
+/**
+ * Animations
+ */
+@-webkit-keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@-webkit-keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+html {
+  /**
+     * 62.5% of 16px browser font size is 10px
+     * with this change, 16px will be 1.6rem
+     * https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+    */
+  font-size: 62.5%;
+  /* smoother transition between themes */
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+/**
+ * CSS Reset
+ * - remove paddings and margins
+ * - set box-sizing to border-box
+ */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  /**
+     * alternative - background: url("../media/desktop-bg-white.jpg) no-repeat top center/cover;
+     * DOCS: background: color image repeat position/size;
+     */
+  background-image: url("../media/desktop-bg-white.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #000;
+  /* 16px */
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-image: url("../media/mobile-bg-white.jpg");
+  }
+}
+
+html.dark body {
+  background-image: url("../media/desktop-bg.jpg");
+  color: #FFF;
+}
+@media screen and (max-width: 480px) {
+  html.dark body {
+    background-image: url("../media/mobile-bg-white.jpg");
+  }
+}
+
+#container {
+  /* 588px */
+  width: 58.8rem;
+  margin: 5.6rem auto 0;
+}
+@media screen and (max-width: 480px) {
+  #container {
+    /* 360px */
+    width: 36rem;
+  }
+}
+
+/**
+ * Profile image and name
+ */
+.profile {
+  padding: 2.4rem;
+  text-align: center;
+}
+
+.profile img {
+  width: 11.2rem;
+  height: 11.2rem;
+  border-radius: 100%;
+  border: 0.3rem solid rgba(0, 0, 0, 0.5);
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+
+html.dark .profile img {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.profile p {
+  font-weight: 500;
+  /* 24px */
+  line-height: 2.4rem;
+}
+
+/**
+ * List of links
+ */
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 2.4rem;
+  list-style: none;
+}
+.links li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  padding: 1.6rem 2.4rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: inherit;
+  backdrop-filter: blur(0.2rem);
+  -webkit-backdrop-filter: blur(0.2rem);
+  font-weight: 500;
+  line-height: 2.4rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.links li a:hover {
+  border-color: #000;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html.dark .links li a {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+html.dark .links li a:hover {
+  border-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/**
+ * Social icons and links
+ */
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 2.4rem;
+}
+.social > a {
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.social > a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.social > a > svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+html.dark .social > a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/**
+ * Switch Theme
+ */
+.switch {
+  min-height: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.4rem 0;
+}
+.switch button {
+  position: relative;
+  width: 6.4rem;
+  border: 4px solid red;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.switch button span:nth-of-type(1) {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-animation: slide-in 0.2s forwards;
+  animation: slide-in 0.2s forwards;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.switch button span:nth-of-type(1):hover {
+  outline: 8px solid rgba(0, 0, 0, 0.2);
+}
+.switch button span:nth-of-type(1) svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.switch button span:nth-of-type(2) {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: 6.4rem;
+  height: 2.4rem;
+  display: block;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 9999rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+  /* transition: all 0.3s ease-in-out; */
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+html.dark .switch button span:first-of-type {
+  left: 0;
+  -webkit-animation: slide-back 0.2s;
+  animation: slide-back 0.2s;
+}
+html.dark .switch button span:first-of-type:hover {
+  outline-color: rgba(255, 255, 255, 0.2);
+}
+html.dark .switch button span:nth-of-type(2) {
+  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/**
+ * Footer
+ */
+#container footer {
+  padding: 2.4rem;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}

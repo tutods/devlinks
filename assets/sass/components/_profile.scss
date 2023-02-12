@@ -1,0 +1,28 @@
+/**
+ * Profile image and name
+ */
+.profile {
+  padding: 2.4rem;
+
+  text-align: center;
+}
+
+.profile img {
+  @include size(11.2rem);
+
+  border-radius: 100%;
+  border: 0.3rem solid $darkBorder;
+
+  object-fit: cover;
+  object-position: top;
+}
+
+html.dark .profile img {
+  border-color: $whiteBorder;
+}
+
+.profile p {
+  font-weight: 500;
+  /* 24px */
+  line-height: 2.4rem;
+}

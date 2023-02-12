@@ -1,0 +1,58 @@
+/**
+ * List of links
+ */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  padding: 2.4rem;
+
+  list-style: none;
+
+  li {
+    a {
+      display: flex;
+      @include flexAlignment(center, center);
+
+      border-radius: 0.8rem;
+      border: 0.1rem solid $darkBorder;
+      padding: 1.6rem 2.4rem;
+
+      background-color: rgba(0, 0, 0, 0.05);
+      color: inherit;
+      backdrop-filter: blur(0.2rem);
+      -webkit-backdrop-filter: blur(0.2rem);
+
+      font-weight: 500;
+      line-height: 2.4rem;
+      text-align: center;
+      text-decoration: none;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        border-color: $black;
+
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+html.dark {
+  .links {
+    li {
+      a {
+        border-color: $whiteBorder;
+        background-color: rgba(255, 255, 255, 0.05);
+
+        &:hover {
+          border-color: $white;
+
+          background-color: rgba(255, 255, 255, 0.15);
+        }
+      }
+    }
+  }
+}

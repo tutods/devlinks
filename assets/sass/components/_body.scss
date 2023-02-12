@@ -1,0 +1,35 @@
+body {
+  min-height: 100vh;
+
+  display: flex;
+  @include flexAlignment(center, center);
+
+  /**
+     * alternative - background: url("../media/desktop-bg-white.jpg) no-repeat top center/cover;
+     * DOCS: background: color image repeat position/size;
+     */
+  background-image: url($desktopBgWhite);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: $black;
+
+  /* 16px */
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+
+  @media screen and (max-width: 480px) {
+    background-image: url($mobileBgWhite);
+  }
+}
+
+html.dark {
+  body {
+    background-image: url($desktopBg);
+    color: $white;
+
+    @media screen and (max-width: 480px) {
+      background-image: url($mobileBgWhite);
+    }
+  }
+}
