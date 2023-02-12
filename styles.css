@@ -127,7 +127,7 @@ html.dark .profile img {
   background-color: transparent;
 
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  outline: none;
 }
 
 /* Switch button with icon */
@@ -149,13 +149,24 @@ html.dark .profile img {
   background-color: #fff;
   color: #000;
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  animation: slide-in 0.2s forwards;
   transform: translateY(-50%);
   z-index: 1;
 }
 
+.switch button span:first-of-type:hover {
+  outline: 8px solid rgba(0, 0, 0, 0.2);
+}
+
 html.dark .switch button span:first-of-type {
   left: 0;
+
+  animation: slide-back 0.2s;
+}
+
+html.dark .switch button span:first-of-type:hover {
+  outline: 8px solid rgba(255, 255, 255, 0.2);
 }
 
 .switch svg {
@@ -182,7 +193,7 @@ html.dark .switch button span:first-of-type {
   backdrop-filter: blur(0.4rem);
   -webkit-backdrop-filter: blur(0.4rem);
 
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
   transform: translateY(-50%);
 }
 
@@ -297,4 +308,25 @@ html.dark .social svg {
   text-align: center;
   font-size: 1.4rem;
   line-height: 2.4rem;
+}
+
+/**
+ * Animations
+ */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
