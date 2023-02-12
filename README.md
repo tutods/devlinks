@@ -12,7 +12,7 @@ As usually, on this repo you can found some changes when compare with the course
 
 ## 📄 Roadmap
 
-The goal of **DevLinks** is work to build your first website, but, in my case, I have a few changes when comparing with the course:
+The goal of **DevLinks** is build your first website, but, in my case, I have a few changes when comparing with the course:
 - [x] Use Gulp;
 - [x] Use Sass;
 - [x] Use SVG Sprite for the icons;
