@@ -13,6 +13,10 @@ html {
 body {
   min-height: 100vh;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   /**
    * alternative - background: url("assets/desktop-bg-white.jpg) no-repeat top center/cover;
    * DOCS: background: color image repeat position/size;
