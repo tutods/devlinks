@@ -110,7 +110,82 @@ html.dark .profile img {
   align-items: center;
   justify-content: center;
 
-  padding: 2.4rem;
+  padding: 0.4rem 0;
+}
+
+.switch button {
+  position: relative;
+
+  width: 6.4rem;
+
+  border: 4px solid red;
+  border: 0;
+  background-color: transparent;
+
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Switch button with icon */
+.switch button span:first-of-type {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  width: 3.2rem;
+  height: 3.2rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0;
+  border-radius: 50%;
+
+  background-color: #fff;
+  color: #000;
+
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+html.dark .switch button span:first-of-type {
+  left: 0;
+}
+
+.switch svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/* Switch track */
+.switch button span:nth-of-type(2) {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+
+  width: 6.4rem;
+  height: 2.4rem;
+
+  display: block;
+
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  border-radius: 9999rem;
+
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(0.4rem);
+  -webkit-backdrop-filter: blur(0.4rem);
+
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-50%);
+}
+
+html.dark .switch button span:nth-of-type(2) {
+  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 /**
@@ -138,6 +213,7 @@ html.dark .profile img {
   background-color: rgba(0, 0, 0, 0.05);
   color: inherit;
   backdrop-filter: blur(0.2rem);
+  -webkit-backdrop-filter: blur(0.2rem);
 
   font-weight: 500;
   line-height: 2.4rem;
@@ -150,7 +226,7 @@ html.dark .profile img {
 .links li a:hover {
   border-color: #000;
 
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 html.dark .links li a {
@@ -161,7 +237,7 @@ html.dark .links li a {
 html.dark .links li a:hover {
   border-color: #fff;
 
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 /**
