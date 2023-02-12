@@ -33,66 +33,25 @@
       fill="currentColor"
     />
   </symbol>
-  <symbol id="moon" viewBox="0 0 16 16" fill="none">
+  <symbol id="twitter" viewBox="0 0 512 512">
     <path
-      d="M13.5 7V4"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-    <path
-      d="M15 5.5H12"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-    <path
-      d="M10.5 1.5V3.5"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-    <path
-      d="M11.5 2.5H9.49997"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-    <path
-      d="M13.5436 9.53751C12.562 9.81279 11.5247 9.82181 10.5384 9.56365C9.5521 9.30549 8.65228 8.78945 7.93136 8.06853C7.21044 7.34761 6.6944 6.44779 6.43624 5.46149C6.17808 4.47518 6.1871 3.43793 6.46238 2.45626C5.49454 2.72564 4.61418 3.2439 3.90897 3.95941C3.20376 4.67491 2.69832 5.5627 2.443 6.53434C2.18767 7.50598 2.19137 8.52756 2.45373 9.49732C2.71609 10.4671 3.22796 11.3512 3.93833 12.0616C4.64871 12.7719 5.53281 13.2838 6.50257 13.5462C7.47233 13.8085 8.49391 13.8122 9.46555 13.5569C10.4372 13.3016 11.325 12.7961 12.0405 12.0909C12.756 11.3857 13.2742 10.5053 13.5436 9.53751Z"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"
+      fill="currentColor"
     />
   </symbol>
   <symbol id="moon" viewBox="0 0 16 16" fill="none">
-    <path
-      d="M13.5 7V4"
-      stroke="current"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-    <path
-      d="M15 5.5H12"
-      stroke="current"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
-    <path
-      d="M10.5 1.5V3.5"
-      stroke="current"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
+    <path d="M13.5 7V4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M15 5.5H12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M10.5 1.5V3.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
     <path
       d="M11.5 2.5H9.49997"
-      stroke="current"
+      stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
     <path
       d="M13.5436 9.53751C12.562 9.81279 11.5247 9.82181 10.5384 9.56365C9.5521 9.30549 8.65228 8.78945 7.93136 8.06853C7.21044 7.34761 6.6944 6.44779 6.43624 5.46149C6.17808 4.47518 6.1871 3.43793 6.46238 2.45626C5.49454 2.72564 4.61418 3.2439 3.90897 3.95941C3.20376 4.67491 2.69832 5.5627 2.443 6.53434C2.18767 7.50598 2.19137 8.52756 2.45373 9.49732C2.71609 10.4671 3.22796 11.3512 3.93833 12.0616C4.64871 12.7719 5.53281 13.2838 6.50257 13.5462C7.47233 13.8085 8.49391 13.8122 9.46555 13.5569C10.4372 13.3016 11.325 12.7961 12.0405 12.0909C12.756 11.3857 13.2742 10.5053 13.5436 9.53751Z"
-      stroke="current"
+      stroke="currentColor"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
@@ -140,12 +99,7 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     />
-    <path
-      d="M13.75 8H15"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
+    <path d="M13.75 8H15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
     <path
       d="M12.0686 3.93126L12.9499 3.05001"
       stroke="currentColor"
