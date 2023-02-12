@@ -1,0 +1,10 @@
+{
+  "name": "devlinks",
+  "version": "1.0.0",
+  "description": "DevLinks project using HTML,CSS and JavaScript",
+  "main": "index.html",
+  "repository": "https://github.com/tutods/devlinks",
+  "author": "Daniel Sousa",
+  "license": "MIT",
+  "private": false
+}

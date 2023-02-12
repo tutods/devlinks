@@ -2,7 +2,7 @@ const htmlElement = document.documentElement;
 const isDarkTheme = htmlElement.classList.contains("dark");
 
 const svgIcon = document.getElementById("switch-icon");
-const baseSpritePath = "./assets/icons-sprite.svg";
+const baseSpritePath = "../media/icons-sprite.svg";
 
 // set default href of icon
 svgIcon.firstElementChild.setAttribute(
