@@ -90,6 +90,10 @@ html.dark {
           &:hover {
             outline-color: rgba(255, 255, 255, 0.2);
           }
+
+          svg {
+            color: $black; // enforce black color on dark mode
+          }
         }
 
         &:nth-of-type(2) {
