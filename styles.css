@@ -1,0 +1,220 @@
+html {
+  /**
+   * 62.5% of 16px browser font size is 10px
+   * with this change, 16px will be 1.6rem
+   * https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+  */
+  font-size: 62.5%;
+
+  /* smoother transition between themes */
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  min-height: 100vh;
+
+  /**
+   * alternative - background: url("assets/desktop-bg-white.jpg) no-repeat top center/cover;
+   * DOCS: background: color image repeat position/size;
+   */
+  background-image: url("assets/desktop-bg-white.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #000;
+
+  /* 16px */
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+
+html.dark body {
+  background-image: url("assets/desktop-bg.jpg");
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-image: url("assets/mobile-bg-white.jpg");
+  }
+
+  html.dark body {
+    background-image: url("assets/mobile-bg.jpg");
+  }
+}
+
+/**
+ * CSS Reset
+ * - remove paddings and margins
+ * - set box-sizing to border-box
+ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+#container {
+  /* 360px */
+  width: 36rem;
+
+  margin: 5.6rem auto 0;
+}
+
+@media screen and (min-width: 481px) {
+  #container {
+    /* 588px */
+    width: 58.8rem;
+  }
+}
+
+/**
+ * Profile image and name
+ */
+.profile {
+  padding: 2.4rem;
+
+  text-align: center;
+}
+
+.profile img {
+  width: 11.2rem;
+  height: 11.2rem;
+
+  border-radius: 100%;
+  border: 0.3rem solid rgba(0, 0, 0, 0.5);
+
+  object-fit: cover;
+  object-position: top;
+}
+
+html.dark .profile img {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.profile p {
+  font-weight: 500;
+  /* 24px */
+  line-height: 2.4rem;
+}
+
+/**
+ * Switch Theme
+ */
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2.4rem;
+}
+
+/**
+ * List of links
+ */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  padding: 2.4rem;
+
+  list-style: none;
+}
+
+.links li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.8rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  padding: 1.6rem 2.4rem;
+
+  background-color: rgba(0, 0, 0, 0.05);
+  color: inherit;
+  backdrop-filter: blur(0.2rem);
+
+  font-weight: 500;
+  line-height: 2.4rem;
+  text-align: center;
+  text-decoration: none;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.links li a:hover {
+  border-color: #000;
+
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+html.dark .links li a {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+html.dark .links li a:hover {
+  border-color: #fff;
+
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/**
+ * Social icons and links
+ */
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  padding: 2.4rem;
+}
+
+.social a {
+  width: 4rem;
+  height: 4rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 100%;
+
+  background-color: transparent;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.social a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+html.dark .social svg {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+html.dark .social svg {
+  color: #fff;
+}
+
+/**
+ * Footer
+ */
+#container footer {
+  padding: 2.4rem;
+
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
