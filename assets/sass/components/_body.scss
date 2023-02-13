@@ -12,6 +12,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  // fallback color
+  background-color: #f7f7f7;
   color: $black;
 
   /* 16px */
@@ -26,6 +28,8 @@ body {
 html.dark {
   body {
     background-image: url($desktopBg);
+    // fallback color
+    background-color: #121214;
     color: $white;
 
     @media screen and (max-width: 480px) {

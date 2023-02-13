@@ -76,28 +76,30 @@ body {
      * alternative - background: url("../media/desktop-bg-white.jpg) no-repeat top center/cover;
      * DOCS: background: color image repeat position/size;
      */
-  background-image: url("../media/desktop-bg-white.jpg");
+  background-image: url('../media/desktop-bg-white.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  background-color: #f7f7f7;
   color: #000;
   /* 16px */
   font-size: 1.6rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 @media screen and (max-width: 480px) {
   body {
-    background-image: url("../media/mobile-bg-white.jpg");
+    background-image: url('../media/mobile-bg-white.jpg');
   }
 }
 
 html.dark body {
-  background-image: url("../media/desktop-bg.jpg");
-  color: #FFF;
+  background-image: url('../media/desktop-bg.jpg');
+  background-color: #121214;
+  color: #fff;
 }
 @media screen and (max-width: 480px) {
   html.dark body {
-    background-image: url("../media/mobile-bg.jpg");
+    background-image: url('../media/mobile-bg.jpg');
   }
 }
 
@@ -191,7 +193,7 @@ html.dark .links li a {
   background-color: rgba(255, 255, 255, 0.05);
 }
 html.dark .links li a:hover {
-  border-color: #FFF;
+  border-color: #fff;
   background-color: rgba(255, 255, 255, 0.15);
 }
 
