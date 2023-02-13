@@ -97,7 +97,7 @@ html.dark body {
 }
 @media screen and (max-width: 480px) {
   html.dark body {
-    background-image: url("../media/mobile-bg-white.jpg");
+    background-image: url("../media/mobile-bg.jpg");
   }
 }
 

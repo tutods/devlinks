@@ -29,7 +29,7 @@ html.dark {
     color: $white;
 
     @media screen and (max-width: 480px) {
-      background-image: url($mobileBgWhite);
+      background-image: url($mobileBg);
     }
   }
 }
