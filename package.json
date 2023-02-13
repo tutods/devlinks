@@ -1,16 +1,17 @@
 {
-  "name": "devlinks",
-  "version": "1.0.0",
-  "description": "DevLinks project using HTML,CSS and JavaScript",
-  "main": "index.html",
-  "repository": "https://github.com/tutods/devlinks",
-  "license": "MIT",
-  "author": {
+	"name": "devlinks",
+	"version": "1.0.0",
+	"description": "DevLinks project using HTML,CSS and JavaScript",
+	"main": "index.html",
+	"repository": "https://github.com/tutods/devlinks",
+	"license": "MIT",
+	"author": {
 		"name": "Daniel Sousa",
 		"url": "https://github.com/tutods"
 	},
 	"type": "module",
 	"scripts": {
+		"prepare": "husky install",
 		"dev": "gulp",
 		"build": "concurrently \"yarn:build:sass\" \"yarn:build:js\"",
 		"build:sass": "gulp sass",
@@ -30,6 +31,13 @@
 		"gulp-concat": "^2.6.1",
 		"gulp-sass": "^5.1.0",
 		"gulp-uglify": "^3.0.2",
-		"prettier": "^2.7.1"
-	}
+		"husky": "^8.0.3",
+		"lint-staged": "^13.1.1",
+		"prettier": "^2.8.4"
+	},
+	"lint-staged": {
+		"*.{md,html,js,css,scss}": [
+		  "prettier --write"
+		]
+	  }
 }
