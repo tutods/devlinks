@@ -38,10 +38,13 @@
         background-color: #fff;
         color: #000;
 
-        transition: all 0.2s ease-in-out;
         animation: slide-in 0.2s forwards;
         transform: translateY(-50%);
         z-index: 1;
+
+        &::after {
+          transition: all 0.2s ease-in-out;
+        }
 
         &:hover {
           &::after {

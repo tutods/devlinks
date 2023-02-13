@@ -13,15 +13,21 @@ As usually, on this repo you can found some changes when compare with the course
 ## 📄 Roadmap
 
 The goal of **DevLinks** is build your first website, but, in my case, I have a few changes when comparing with the course:
+
 - [x] Use Gulp;
 - [x] Use Sass;
 - [x] Use SVG Sprite for the icons;
 
+### Fixes
+
+- [x] Change `outline` property on switch to use `::after` with `border` property;
+  - **Why?** The `oultine` on **Safari** appears as a square, don't respect the `border-radius` on switch toggle. But, if you use as `border` on `::after` you can have the same effect.
+
 ### What is missing?
 
--   [ ] **ESLint** configuration;
--   [ ] Improve SEO;
--   [ ] Create config to optimize and convert images to `.webp`.
+- [ ] **ESLint** configuration;
+- [ ] Improve SEO;
+- [ ] Create config to optimize and convert images to `.webp`.
 
 ## 🔗 More About Me
 
