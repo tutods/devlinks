@@ -44,7 +44,15 @@
         z-index: 1;
 
         &:hover {
-          outline: 8px solid rgba(0, 0, 0, 0.2);
+          &::after {
+            content: '';
+
+            position: absolute;
+            inset: -0.8rem;
+
+            border-radius: 100%;
+            border: 0.8rem solid rgba(0, 0, 0, 0.2);
+          }
         }
 
         svg {
@@ -88,7 +96,9 @@ html.dark {
           animation: slide-back 0.2s;
 
           &:hover {
-            outline-color: rgba(255, 255, 255, 0.2);
+            &::after {
+              border-color: rgba(255, 255, 255, 0.2);
+            }
           }
 
           svg {
