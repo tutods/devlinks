@@ -1,4 +1,4 @@
-![CodeBoost - Blizzard](assets/media/cover.jpg)
+![Devlinks](assets/media/cover.jpg)
 
 # DevLinks
 
